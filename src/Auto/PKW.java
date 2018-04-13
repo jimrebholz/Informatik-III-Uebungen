@@ -11,6 +11,9 @@ public class PKW {
 	//Kann auch ohne ein bestehendes Objekt verwendet werden
 	//Nur einmal wird Speicher angegelt
 	static int counter = 0;
+	//Static Variablen gehören zur Klasse und werden von den verschiedenen 
+	//Objekten geteilt
+	
 	
 	public PKW() {
 		System.out.println("PKW wurde erzeugt");

@@ -1,5 +1,6 @@
 import Auto.Motor;
 import Auto.PKW;
+import Auto.Parkhaus;
 
 //Pro Klasse eine Datei, beinhaltet sowohl Deklaration als auch Methoden
 //In Werkstatt werden keine Include gebraucht
@@ -36,6 +37,10 @@ public class Werkstatt {
 		 //Motor wird direkte audiMotor zugewiesen
 		 Motor audiMotor = audi.getMotor();
 		 Motor vwMotor = vw.getMotor();
+		 
+		 Parkhaus parkhaus = Parkhaus.getInstance();
+		 parkhaus.push(audi);
+		 System.out.println("Die Anzahl an Autos im Parkhaus beträgt:" + parkhaus.getCount());
 		 
 	 }
 	
