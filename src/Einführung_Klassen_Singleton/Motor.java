@@ -1,4 +1,4 @@
-package Auto;
+package Einführung_Klassen_Singleton;
 
 //Hier kann ein Package eingefügt werden
 public class Motor {

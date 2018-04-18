@@ -1,4 +1,4 @@
-package Auto;
+package Einführung_Klassen_Singleton;
 import java.util.LinkedList;
 
 //Vererbung über PKW extends KFZ, KFZ extends FZ

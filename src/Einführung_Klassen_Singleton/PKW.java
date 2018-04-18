@@ -1,6 +1,8 @@
-package Auto;
+package Einführung_Klassen_Singleton;
 
-public class PKW {
+//Pkw erbt von Kfz -> Kfz Oberklasse
+//über final gibt es keine Unterklassen mehr von PKW
+public final class PKW extends Kfz{
 	
 	//Instazvariable, für jedes Objekt wird neuer Speicher angelegt
 	private int baujahr;

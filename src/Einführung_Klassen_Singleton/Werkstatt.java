@@ -1,6 +1,7 @@
-import Auto.Motor;
-import Auto.PKW;
-import Auto.Parkhaus;
+package Einführung_Klassen_Singleton;
+import Einführung_Klassen_Singleton.Motor;
+import Einführung_Klassen_Singleton.PKW;
+import Einführung_Klassen_Singleton.Parkhaus;
 
 //Pro Klasse eine Datei, beinhaltet sowohl Deklaration als auch Methoden
 //In Werkstatt werden keine Include gebraucht
@@ -38,9 +39,11 @@ public class Werkstatt {
 		 Motor audiMotor = audi.getMotor();
 		 Motor vwMotor = vw.getMotor();
 		 
+		 //Hier wird static benötigt, da Objekt nur in Klasse selber erzeugt wird
 		 Parkhaus parkhaus = Parkhaus.getInstance();
 		 parkhaus.push(audi);
-		 System.out.println("Die Anzahl an Autos im Parkhaus beträgt:" + parkhaus.getCount());
+		 parkhaus.push(vw);
+		 System.out.println("Die Anzahl an Autos im Parkhaus beträgt: " + parkhaus.getCount() + " Autos");
 		 
 	 }
 	
